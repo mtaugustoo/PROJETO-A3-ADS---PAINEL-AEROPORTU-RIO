@@ -17,13 +17,13 @@ class Voo:
         #o status operacional não se encontra no parâmetro acima () pelo fato de iniciar automaticamente como PREVISTO - Não existe uma opção do usuário escolher o status inicial no momento de cadastro
         self.status = "PREVISTO"
 
-def __str__(self): # -> __str__ método para criar um painel/interface para uma experiência melhor para o usuário.
-    return  ( 
+    def __str__(self): # -> __str__ método para criar um painel/interface para uma experiência melhor para o usuário.
+        return  ( 
         # f-string: formata o texto, inserindo variáveis entre {} e alinhando a coluna
-    f"{self.numero_voo:<10} | " 
-    f"{self.companhia:<15} | "
-    f"{self.horario_embarque:<10} | "
-    f"{self.horario_saida:<10} | "
-    f"{self.destino:<18} | "
-    f"{self.status}"
-    )
+        f"{self.numero_voo:<10} | " 
+        f"{self.companhia:<18} | "
+        f"{self.horario_embarque:<10} | "
+        f"{self.horario_saida:<10} | "
+        f"{self.destino:<18} | "
+        f"{self.status:<18}"
+        )
