@@ -20,10 +20,10 @@ class Voo:
 def __str__(self): # -> __str__ método para criar um painel/interface para uma experiência melhor para o usuário.
     return  ( 
         # f-string: formata o texto, inserindo variáveis entre {} e alinhando a coluna
-    f"{self.numero_voo: < 10} | " 
-    f"{self.companhia: < 15} | "
-    f"{self.horario_embarque: < 10} | "
-    f"{self.horario_saida: < 10} | "
-    f"{self.destino: < 18} | "
+    f"{self.numero_voo:<10} | " 
+    f"{self.companhia:<15} | "
+    f"{self.horario_embarque:<10} | "
+    f"{self.horario_saida:<10} | "
+    f"{self.destino:<18} | "
     f"{self.status}"
     )
