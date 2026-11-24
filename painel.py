@@ -48,7 +48,7 @@ class PainelAeroporto:
             print("                               PAINEL DE DECOLAGEM")
             print("=" * 82)
             # Imprime os títulos das colunas, cada um com largura fixa e alinhado à esquerd
-            print(f"{'NÚMERO': <10} | {'COMPANHIA': <15} | {'EMBARQUE' : <10} | {'SAÍDA' : <10} | {'DESTINO': <18} | STATUS")
+            print(f"{'NÚMERO':<10} | {'COMPANHIA': <15} | {'EMBARQUE':<10} | {'SAÍDA' :<10} | {'DESTINO':<18} | STATUS")
             print("-" * 82)
             #Percorre a lista de voos e imprime cada um
             for voo in self.voos:
