@@ -3,6 +3,16 @@ class PainelAeroporto:
      def __init__(self):
         self.voos = [] #método foi criado, lista está vazia, pronta para receber voos depois.
 
+        def carregar_dados_iniciais(self): 
+            self.cadastrar_voo("LA3456", "LATAM", "14:30", "15:10", "Rio de Janeiro") 
+            self.cadastrar_voo("GL1208", "GOL", "15:00", "15:45", "Salvador") 
+            self.cadastrar_voo("AZ4510", "AZUL", "16:15", "17:00", "Curitiba")
+            self.cadastrar_voo("TP0088", "TAP", "18:20", "19:10", "Lisboa")
+            self.cadastrar_voo("AD2400", "AZUL", "19:30", "20:15", "Florianópolis") 
+            self.cadastrar_voo( "AR1240", "Aerolineas", "20:00", "20:50", "Buenos Aires" ) 
+            self.cadastrar_voo("AA0950", "American Airlines", "21:15", "22:05", "Miami") 
+            self.cadastrarvoo("AF0457", "Air France", "22:45", "23:40", "Paris")
+
         def buscar_voo(self, numero_voo: str) : #Localiza um voo pelo número.
             for voo in self.voos: 
                 if voo.numero_voo.upper() == numero_voo.upper(): 
@@ -98,3 +108,4 @@ class PainelAeroporto:
             #Remove o objeto lista da memória RAM
             self.voos.remove(voo)
             return f"[REMOVIDO] Voo `{numero_voo.upper()}' removido do sistema com sucesso!"
+        
